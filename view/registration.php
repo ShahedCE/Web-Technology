@@ -1,17 +1,3 @@
-<?php
-session_start();
-
-setcookie("user","1",time()+86400); // expire after 30 days
-if(!isset($_COOKIE["user"]))
-{
-  echo "Welcome to my site";
-}else{
-  echo "You have visited me before";
-}
-echo "<br>";
-
-echo $_SESSION["user"]="Session";
-?>
 
 <?php
 include "../control/action_reg.php"; //for validation
@@ -91,6 +77,9 @@ include "../control/action_reg.php"; //for validation
                     <td><input class="reset" type="reset" value="Reset"></td>
                 </tr>
             </table>
+            <br>
+              <label>Have account,<label>
+               <a href="../view/login.php">Login</a>
         </fieldset>
     </form>
 

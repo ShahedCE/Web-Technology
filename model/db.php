@@ -22,6 +22,10 @@ function fetchUser($conn,$uname)
     $sql="SELECT * FROM users WHERE uname='$uname'";
     return mysqli_query($conn,$sql);
 }
+function checkDelete($conn,$uname,$pass){
+    $sql="DELETE FROM users WHERE uname='$uname' AND pass='$pass'";
+    return mysqli_query($conn,$sql);
+}
 
 function closeCon($conn)
 {

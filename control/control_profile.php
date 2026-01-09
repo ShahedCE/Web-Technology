@@ -11,6 +11,7 @@ session_start();
   while($row = $result->fetch_assoc())
   {
    $data[$n]=array( $row["Id"], $row["uname"],$row["gender"],'<img src="'. $row["file"] .'">');
+   //ID,uname,file are the column name of the table and $row["Id"].... are the values of the column name Id in $row array
    $n++;
   }
  }

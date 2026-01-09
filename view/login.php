@@ -24,6 +24,12 @@ include "../control/control_login.php";
 <br><br>
 <input type="submit" class="submit" name="Submit" value="Submit">
 <td><input class="reset" type="reset" value="Reset"></td>
+<br>
+<br>
+<label>Dont't have account, go to<label>
+<a href="../view/registration.php">Registeration</a>
+
+ 
 
 
 </body>
